@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Wedding Invitation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <!-- For icons -->
+  </head>
+  <body>
+    <!-- Scrolling Welcome Banner -->
+    <div class="scroll-banner">
+      <p>💍 Welcome to Our Wedding 💕 MadhavaRao & Srivani – 9th May 2025 💒</p>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+      <div class="logo">
+        <!-- <h1>Welcome to Our Wedding</h1>
+        <p>Join us as we begin our new chapter</p> -->
+        <!-- Welcome Button -->
+<div class="enter-button-container">
+  <button class="enter-button" onclick="playWeddingMusic()">❤️ Enter with Love →</button>
+</div>
+
+<!-- Audio Element -->
+<audio id="weddingAudio" loop>
+  <source src="./images/Vachindamma - SenSongsMp3.Co.mp3" type="audio/mpeg" />
+</audio>
+
+        
+      </div>
+      <div class="floating-symbols">
+        <span class="symbol">♥</span>
+        <span class="symbol">★</span>
+        <span class="symbol">♥</span>
+        <span class="symbol">★</span>
+        <span class="symbol">♥</span>
+      </div>
+      <div class="emoji-disco">
+        <span>❤️</span>
+        <span>❤️</span>
+        <span>❤️</span>
+        <span>❤️</span>
+        <span>❤️</span>
+        <span>❤️</span>
+        <span>❤️</span>
+        <span>❤️</span>
+      </div>
+      <div class="disco-text top-right-radius">
+        <h1>Madhavarao weds Srivani</h1>
+      </div>
+      
+      
+      
+      
+      
+    </header>
+
+    <!-- Invitation Section -->
+    <section class="invitation">
+      <h2>You're Invited!</h2>
+      <p>
+        We, <strong>MadhavaRao & Srivani</strong>, are excited to invite you to celebrate
+        our special day with us!
+      </p>
+      <p><strong>Wedding Date:</strong> 9th May 2025</p>
+      <p><strong>Venue:</strong> Valaparla, Garataiah Colony</p>
+    </section>
+
+    <!-- Countdown Timer -->
+    <div class="wedding-countdown">
+        <div class="calendar-box">
+          <div class="date-title">Wedding Day</div>
+          <div class="wedding-date">May 9, 2025 – 7:15 PM</div>
+          <div id="countdown">
+            <div><span id="days">00</span><small>Days</small></div>
+            <div><span id="hours">00</span><small>Hours</small></div>
+            <div><span id="minutes">00</span><small>Minutes</small></div>
+            <div><span id="seconds">00</span><small>Seconds</small></div>
+          </div>
+        </div>
+      </div>
+      
+
+    <!-- Cards Section (With Images) -->
+    <section class="cards-section">
+      <h2>Family Member'S</h2>
+      <div class="cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="./images/engage.jpg" alt="Ceremony" class="card-img" />
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="./images/engage2.jpg" alt="Reception" class="card-img" />
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="./images/engage3.jpg" alt="RSVP" class="card-img" />
+        </div>
+        <div class="card">
+            <img src="./images/deekshi.jpg" alt="RSVP" class="card-img" />
+        </div>
+        <div class="card">
+            <img src="./images/madhav.jpg" alt="RSVP" class="card-img" />
+        </div>
+        <div class="card">
+            <img src="./images/dushyanth.jpg" alt="RSVP" class="card-img" />
+        </div>
+        <div class="card">
+            <img src="./images/dushyanth2.jpg" alt="RSVP" class="card-img" />
+        </div>
+        <div class="card">
+            <img src="./images/sai2.webp" alt="RSVP" class="card-img" />
+        </div>
+        <div class="musical-event">
+          <h1>🎶 Musical Night 🎶</h1>
+          <svg class="note" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+            <path d="M52 4v36.9a12 12 0 1 0 4 9.1V16h8V4H52zM16 52a12 12 0 1 0 12 12 12 12 0 0 0-12-12z"/>
+          </svg>
+          <div class="lucky-text">✨ Lucky Event Tonight ✨</div>
+        </div>
+        <div class="card card4">
+            <img src="./images/pillalamarri_wedding_captioned.jpg" alt="RSVP" class="card-img " />
+        </div>
+        
+      </div>
+      </div>
+    </section>
+
+
+    <!-- RSVP Form -->
+    <div class="rsvp-container">
+        <section class="rsvp">
+          <h2>RSVP</h2>
+          <form id="rsvpForm"
+                class="rsvp-form"
+                action="https://formsubmit.co/saikumarpillalamarri445@gmail.com"
+                method="POST">
+      
+            <!-- Redirect after form submission -->
+            <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html">
+      
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name" />
+      
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email" />
+      
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" max="10" required placeholder="e.g. 2" />
+      
+            <label for="attendance">Will you attend?</label>
+            <select id="attendance" name="attendance" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+      
+            <label for="meal">Meal Preference:</label>
+            <select id="meal" name="meal" required>
+              <option value="" disabled selected>Select meal type</option>
+              <option value="Veg">Vegetarian</option>
+              <option value="Non-Veg">Non-Vegetarian</option>
+              <option value="Jain">Jain</option>
+            </select>
+      
+            <label for="message">Leave a Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="We’d love to hear from you!"></textarea>
+      
+            <button type="submit" class="btn">Submit RSVP</button>
+          </form>
+      
+          <p id="responseMessage"></p>
+        </section>
+      </div>
+      
+      
+      
+    <!-- Footer Section -->
+    <footer class="footer">
+      <p>&copy; 2025 MadhavaRao & Srivani. All The Best</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
